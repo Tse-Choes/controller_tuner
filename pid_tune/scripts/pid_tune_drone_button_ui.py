@@ -205,14 +205,12 @@ class PIDTuningApp(Node):
 
             # Structure the data to match a typical ROS 2 parameter YAML file format
             yaml_data = {
-                'throttle_pid': {
-                    'ros__parameters': throttle_values
-                },
-                'pitch_pid': {
-                    'ros__parameters': pitch_values
-                },
-                'roll_pid': {
-                    'ros__parameters': roll_values
+                "pico_controller": {
+                    "ros__parameters": {
+                        "pitch_pid": pitch_values,
+                        "roll_pid": roll_values,
+                        "throttle_pid": throttle_values
+                    }
                 }
             }
 

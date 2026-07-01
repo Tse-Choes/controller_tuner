@@ -25,9 +25,7 @@ find_package(ament_cmake_python REQUIRED)
 # Install scripts
 set(SCRIPTS_DIR scripts)
 install(PROGRAMS
-    ${SCRIPTS_DIR}/pid_tune_differential.py
     ${SCRIPTS_DIR}/pid_tune_drone_button_ui.py
-    ${SCRIPTS_DIR}/pid_tune_drone_slider_ui.py
     DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -217,7 +217,9 @@ class PIDTuningApp(Node):
             }
 
             # Write the YAML data to a file
-            with open('pid_values.yaml', 'w') as yaml_file:
+            package_dir = get_package_share_directory('pid_tune')
+            yaml_filepath = os.path.join(package_dir, 'resources', 'pid_values.yaml')
+            with open(yaml_filepath, 'w') as yaml_file:
                 yaml.dump(yaml_data, yaml_file, default_flow_style=False)
 
             self.success_label.grid()  # Show the success icon

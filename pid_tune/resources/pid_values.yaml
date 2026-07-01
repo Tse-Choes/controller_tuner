@@ -9,6 +9,6 @@ pico_controller:
       Ki: 0
       Kp: 0
     throttle_pid:
-      Kd: 0
+      Kd: 401
       Ki: 0
-      Kp: 0
+      Kp: 301

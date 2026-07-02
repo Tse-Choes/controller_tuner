@@ -1,13 +1,13 @@
 pico_controller:
   ros__parameters:
     pitch_pid:
-      Kd: 0
+      Kd: 401
       Ki: 0
-      Kp: 0
+      Kp: 301
     roll_pid:
-      Kd: 0
+      Kd: 401
       Ki: 0
-      Kp: 0
+      Kp: 301
     throttle_pid:
       Kd: 401
       Ki: 0
